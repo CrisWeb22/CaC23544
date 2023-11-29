@@ -3,7 +3,7 @@ package ar.com.codoacodo.entity;
 import java.time.LocalDate;
 
 public class Orador {
-	//atributos
+	//atributos - encapsulamiento
 	private Long id;
 	private String nombre;
 	private String apellido;
@@ -31,6 +31,7 @@ public class Orador {
 		this.fechaAlta = fechaAlta;
 	}
 
+	//cambiar un metodo ToString() de la clase Object
 	//otra forma de POLIMORFISMO: SOBRESCRITURA, metodo que existe en una clase base (java.lang.Orador)
 	//pero que su hijo (Orador) lo cambia
 	@Override //segun carlos no es necesario
@@ -38,8 +39,66 @@ public class Orador {
 		return "Orador [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", mail=" + mail + ", tema="
 				+ tema + ", fechaAlta=" + fechaAlta + "]";
 	}
+
+	//getters/setters
+	public Long getId() {
+		return id;
+	}
+
 	
-	//cambiar un metodo ToString() de la clase Object
+	/*
+	public void setId(Long id) {
+		this.id = id;
+	}
+	*/
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		if(nombre != null) {
+			this.nombre = nombre;
+		}else {
+			this.nombre = "N/D";
+		}
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	public String getMail() {
+		return mail;
+	}
+
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+
+	public String getTema() {
+		return tema;
+	}
+
+	public void setTema(String tema) {
+		this.tema = tema;
+	}
+
+	public LocalDate getFechaAlta() {
+		return fechaAlta;
+	}
+
+	public void setFechaAlta(LocalDate fechaAlta) {
+		this.fechaAlta = fechaAlta;
+	}
+	
+	
+	
+	
 	
 	
 	

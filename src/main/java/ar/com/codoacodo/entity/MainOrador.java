@@ -8,6 +8,7 @@ public class MainOrador {
 		Orador nuevoOrador = new Orador("Cristian", "Olmedo", "email@email.com", "JAVA", LocalDate.now());
 		
 		System.out.println(nuevoOrador);
+		
 	}
 
 }
