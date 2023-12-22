@@ -4,15 +4,15 @@ public class MainHerencia {
 
 	public static void main(String[] args) {
 		
-		Articulo a1 = new Articulo("tituloUno", 15.2f, "www.url/imagen.png");
-		a1.setAutor("Kobencius");
+		Articulo art = new Articulo("tituloUno", 15.2f, "www.url/imagen.png");
+		art.setAutor("Kobencius");
 		//System.out.println(a1);
 		
 		
-		Musica m1 = new Musica("Las locas aventuras de Koba", 52.45f, "urldemuisca/lop.png");
-		m1.setAutor("KobeTheDog");
+		Musica musik = new Musica("Las locas aventuras de Koba", 52.45f, "urldemuisca/lop.png");
+		musik.setAutor("KobeTheDog");
 		String [] temas = new String[] {"t1", "t2", "t3"};
-		m1.setTemas(temas);
+		musik.setTemas(temas);
 		//System.out.println(m1);
 		
 		
@@ -27,8 +27,8 @@ public class MainHerencia {
 		
 		//vector para guardar las instancias
 		Articulo[] resultados = new Articulo[3];
-		resultados[0] = a1;
-		resultados[1] = m1;
+		resultados[0] = art;
+		resultados[1] = musik;
 		resultados[2] = p1;
 		
 		for(Articulo aux : resultados) {
